@@ -1,7 +1,9 @@
 <?php
+//fetch covid data from external API reference:  URL:  https://api.covid19api.com/summary
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+
 //submit the request to  the API endpoint.
 $covidDataJSONString = file_get_contents('https://api.covid19api.com/summary');
 //convert the response to a PHP object.
